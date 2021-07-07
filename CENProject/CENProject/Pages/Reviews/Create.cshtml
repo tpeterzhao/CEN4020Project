@@ -1,0 +1,139 @@
+﻿@page
+@model CENProject.Pages.Reviews.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Review</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Review.PaperID" class="control-label"></label>
+                <input asp-for="Review.PaperID" class="form-control" />
+                <span asp-validation-for="Review.PaperID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.ReviewerID" class="control-label"></label>
+                <input asp-for="Review.ReviewerID" class="form-control" />
+                <span asp-validation-for="Review.ReviewerID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.AOT" class="control-label"></label>
+                <input asp-for="Review.AOT" class="form-control" />
+                <span asp-validation-for="Review.AOT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.ToT" class="control-label"></label>
+                <input asp-for="Review.ToT" class="form-control" />
+                <span asp-validation-for="Review.ToT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.SE" class="control-label"></label>
+                <input asp-for="Review.SE" class="form-control" />
+                <span asp-validation-for="Review.SE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.TQ" class="control-label"></label>
+                <input asp-for="Review.TQ" class="form-control" />
+                <span asp-validation-for="Review.TQ" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.SoC" class="control-label"></label>
+                <input asp-for="Review.SoC" class="form-control" />
+                <span asp-validation-for="Review.SoC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.CoPW" class="control-label"></label>
+                <input asp-for="Review.CoPW" class="form-control" />
+                <span asp-validation-for="Review.CoPW" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.Originality" class="control-label"></label>
+                <input asp-for="Review.Originality" class="form-control" />
+                <span asp-validation-for="Review.Originality" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.CC" class="control-label"></label>
+                <input asp-for="Review.CC" class="form-control" />
+                <span asp-validation-for="Review.CC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.OoP" class="control-label"></label>
+                <input asp-for="Review.OoP" class="form-control" />
+                <span asp-validation-for="Review.OoP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.CoMM" class="control-label"></label>
+                <input asp-for="Review.CoMM" class="form-control" />
+                <span asp-validation-for="Review.CoMM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.Mechanics" class="control-label"></label>
+                <input asp-for="Review.Mechanics" class="form-control" />
+                <span asp-validation-for="Review.Mechanics" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.WDC" class="control-label"></label>
+                <input asp-for="Review.WDC" class="form-control" />
+                <span asp-validation-for="Review.WDC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.SfP" class="control-label"></label>
+                <input asp-for="Review.SfP" class="form-control" />
+                <span asp-validation-for="Review.SfP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.PIiT" class="control-label"></label>
+                <input asp-for="Review.PIiT" class="form-control" />
+                <span asp-validation-for="Review.PIiT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.PfOPC" class="control-label"></label>
+                <input asp-for="Review.PfOPC" class="form-control" />
+                <span asp-validation-for="Review.PfOPC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.OR" class="control-label"></label>
+                <input asp-for="Review.OR" class="form-control" />
+                <span asp-validation-for="Review.OR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.ORC" class="control-label"></label>
+                <input asp-for="Review.ORC" class="form-control" />
+                <span asp-validation-for="Review.ORC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.CLT" class="control-label"></label>
+                <input asp-for="Review.CLT" class="form-control" />
+                <span asp-validation-for="Review.CLT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Review.CLA" class="control-label"></label>
+                <input asp-for="Review.CLA" class="form-control" />
+                <span asp-validation-for="Review.CLA" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Review.Complete" /> @Html.DisplayNameFor(model => model.Review.Complete)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

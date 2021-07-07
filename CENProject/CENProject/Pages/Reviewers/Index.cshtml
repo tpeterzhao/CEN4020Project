@@ -1,0 +1,318 @@
+﻿@page
+@model CENProject.Pages.Reviewers.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].MiddleInitial)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].Affiliation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].Department)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].State)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].ZipCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].PhoneNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].EmailAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].AoA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].Applications)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].Architecture)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].AI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].CE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].Curriculum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].DS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].Database)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].DL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].DSS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].ESI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].FYC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].GI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].GW)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].GIP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].HCI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].LE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].Literacy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].MIC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].Multimedia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].NDC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].NMC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].OOI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].OS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].PP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].Pedagogy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].PL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].Research)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].Security)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].SE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].SAAD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].UTITC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].WAIP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].Other)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].OD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reviewer[0].RA)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Reviewer) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MiddleInitial)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Affiliation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Department)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.State)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ZipCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AoA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Applications)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Architecture)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Curriculum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Database)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DSS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ESI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FYC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GW)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GIP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HCI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Literacy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MIC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Multimedia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NDC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NMC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OOI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pedagogy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Research)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Security)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SAAD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UTITC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WAIP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Other)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RA)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ReviewerID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ReviewerID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ReviewerID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,162 @@
+﻿@page
+@model CENProject.Pages.Reviews.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].PaperID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].ReviewerID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].AOT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].ToT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].SE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].TQ)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].SoC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].CoPW)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].Originality)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].CC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].OoP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].CoMM)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].Mechanics)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].WDC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].SfP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].PIiT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].PfOPC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].OR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].ORC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].CLT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].CLA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Review[0].Complete)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Review) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PaperID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReviewerID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AOT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ToT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TQ)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CoPW)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Originality)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OoP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CoMM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mechanics)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WDC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SfP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PIiT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PfOPC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ORC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CLT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CLA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Complete)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ReviewID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ReviewID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ReviewID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

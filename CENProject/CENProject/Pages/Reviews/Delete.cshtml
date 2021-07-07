@@ -1,0 +1,154 @@
+﻿@page
+@model CENProject.Pages.Reviews.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Review</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.PaperID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.PaperID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.ReviewerID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.ReviewerID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.AOT)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.AOT)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.ToT)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.ToT)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.SE)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.SE)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.TQ)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.TQ)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.SoC)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.SoC)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.CoPW)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.CoPW)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.Originality)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.Originality)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.CC)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.CC)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.OoP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.OoP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.CoMM)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.CoMM)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.Mechanics)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.Mechanics)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.WDC)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.WDC)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.SfP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.SfP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.PIiT)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.PIiT)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.PfOPC)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.PfOPC)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.OR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.OR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.ORC)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.ORC)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.CLT)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.CLT)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.CLA)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.CLA)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Review.Complete)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Review.Complete)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Review.ReviewID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

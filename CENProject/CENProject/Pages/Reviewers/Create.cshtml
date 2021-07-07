@@ -1,0 +1,269 @@
+﻿@page
+@model CENProject.Pages.Reviewers.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Reviewer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Reviewer.FirstName" class="control-label"></label>
+                <input asp-for="Reviewer.FirstName" class="form-control" />
+                <span asp-validation-for="Reviewer.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reviewer.MiddleInitial" class="control-label"></label>
+                <input asp-for="Reviewer.MiddleInitial" class="form-control" />
+                <span asp-validation-for="Reviewer.MiddleInitial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reviewer.LastName" class="control-label"></label>
+                <input asp-for="Reviewer.LastName" class="form-control" />
+                <span asp-validation-for="Reviewer.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reviewer.Affiliation" class="control-label"></label>
+                <input asp-for="Reviewer.Affiliation" class="form-control" />
+                <span asp-validation-for="Reviewer.Affiliation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reviewer.Department" class="control-label"></label>
+                <input asp-for="Reviewer.Department" class="form-control" />
+                <span asp-validation-for="Reviewer.Department" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reviewer.Address" class="control-label"></label>
+                <input asp-for="Reviewer.Address" class="form-control" />
+                <span asp-validation-for="Reviewer.Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reviewer.City" class="control-label"></label>
+                <input asp-for="Reviewer.City" class="form-control" />
+                <span asp-validation-for="Reviewer.City" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reviewer.State" class="control-label"></label>
+                <input asp-for="Reviewer.State" class="form-control" />
+                <span asp-validation-for="Reviewer.State" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reviewer.ZipCode" class="control-label"></label>
+                <input asp-for="Reviewer.ZipCode" class="form-control" />
+                <span asp-validation-for="Reviewer.ZipCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reviewer.PhoneNumber" class="control-label"></label>
+                <input asp-for="Reviewer.PhoneNumber" class="form-control" />
+                <span asp-validation-for="Reviewer.PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reviewer.EmailAddress" class="control-label"></label>
+                <input asp-for="Reviewer.EmailAddress" class="form-control" />
+                <span asp-validation-for="Reviewer.EmailAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reviewer.Password" class="control-label"></label>
+                <input asp-for="Reviewer.Password" class="form-control" />
+                <span asp-validation-for="Reviewer.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.AoA" /> @Html.DisplayNameFor(model => model.Reviewer.AoA)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.Applications" /> @Html.DisplayNameFor(model => model.Reviewer.Applications)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.Architecture" /> @Html.DisplayNameFor(model => model.Reviewer.Architecture)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.AI" /> @Html.DisplayNameFor(model => model.Reviewer.AI)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.CE" /> @Html.DisplayNameFor(model => model.Reviewer.CE)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.Curriculum" /> @Html.DisplayNameFor(model => model.Reviewer.Curriculum)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.DS" /> @Html.DisplayNameFor(model => model.Reviewer.DS)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.Database" /> @Html.DisplayNameFor(model => model.Reviewer.Database)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.DL" /> @Html.DisplayNameFor(model => model.Reviewer.DL)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.DSS" /> @Html.DisplayNameFor(model => model.Reviewer.DSS)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.ESI" /> @Html.DisplayNameFor(model => model.Reviewer.ESI)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.FYC" /> @Html.DisplayNameFor(model => model.Reviewer.FYC)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.GI" /> @Html.DisplayNameFor(model => model.Reviewer.GI)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.GW" /> @Html.DisplayNameFor(model => model.Reviewer.GW)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.GIP" /> @Html.DisplayNameFor(model => model.Reviewer.GIP)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.HCI" /> @Html.DisplayNameFor(model => model.Reviewer.HCI)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.LE" /> @Html.DisplayNameFor(model => model.Reviewer.LE)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.Literacy" /> @Html.DisplayNameFor(model => model.Reviewer.Literacy)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.MIC" /> @Html.DisplayNameFor(model => model.Reviewer.MIC)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.Multimedia" /> @Html.DisplayNameFor(model => model.Reviewer.Multimedia)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.NDC" /> @Html.DisplayNameFor(model => model.Reviewer.NDC)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.NMC" /> @Html.DisplayNameFor(model => model.Reviewer.NMC)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.OOI" /> @Html.DisplayNameFor(model => model.Reviewer.OOI)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.OS" /> @Html.DisplayNameFor(model => model.Reviewer.OS)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.PP" /> @Html.DisplayNameFor(model => model.Reviewer.PP)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.Pedagogy" /> @Html.DisplayNameFor(model => model.Reviewer.Pedagogy)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.PL" /> @Html.DisplayNameFor(model => model.Reviewer.PL)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.Research" /> @Html.DisplayNameFor(model => model.Reviewer.Research)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.Security" /> @Html.DisplayNameFor(model => model.Reviewer.Security)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.SE" /> @Html.DisplayNameFor(model => model.Reviewer.SE)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.SAAD" /> @Html.DisplayNameFor(model => model.Reviewer.SAAD)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.UTITC" /> @Html.DisplayNameFor(model => model.Reviewer.UTITC)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.WAIP" /> @Html.DisplayNameFor(model => model.Reviewer.WAIP)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.Other" /> @Html.DisplayNameFor(model => model.Reviewer.Other)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reviewer.OD" class="control-label"></label>
+                <input asp-for="Reviewer.OD" class="form-control" />
+                <span asp-validation-for="Reviewer.OD" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Reviewer.RA" /> @Html.DisplayNameFor(model => model.Reviewer.RA)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

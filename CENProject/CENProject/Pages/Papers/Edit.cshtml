@@ -1,0 +1,240 @@
+﻿@page
+@model CENProject.Pages.Papers.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Paper</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Paper.PaperID" />
+            <div class="form-group">
+                <label asp-for="Paper.AuthorID" class="control-label"></label>
+                <input asp-for="Paper.AuthorID" class="form-control" />
+                <span asp-validation-for="Paper.AuthorID" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.Active" /> @Html.DisplayNameFor(model => model.Paper.Active)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Paper.FilenameOriginal" class="control-label"></label>
+                <input asp-for="Paper.FilenameOriginal" class="form-control" />
+                <span asp-validation-for="Paper.FilenameOriginal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Paper.Filename" class="control-label"></label>
+                <input asp-for="Paper.Filename" class="form-control" />
+                <span asp-validation-for="Paper.Filename" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Paper.Title" class="control-label"></label>
+                <input asp-for="Paper.Title" class="form-control" />
+                <span asp-validation-for="Paper.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Paper.Certification" class="control-label"></label>
+                <input asp-for="Paper.Certification" class="form-control" />
+                <span asp-validation-for="Paper.Certification" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Paper.NotesToReviewers" class="control-label"></label>
+                <input asp-for="Paper.NotesToReviewers" class="form-control" />
+                <span asp-validation-for="Paper.NotesToReviewers" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.AoA" /> @Html.DisplayNameFor(model => model.Paper.AoA)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.Applications" /> @Html.DisplayNameFor(model => model.Paper.Applications)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.Architecture" /> @Html.DisplayNameFor(model => model.Paper.Architecture)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.AI" /> @Html.DisplayNameFor(model => model.Paper.AI)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.CE" /> @Html.DisplayNameFor(model => model.Paper.CE)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.Curriculum" /> @Html.DisplayNameFor(model => model.Paper.Curriculum)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.DS" /> @Html.DisplayNameFor(model => model.Paper.DS)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.Database" /> @Html.DisplayNameFor(model => model.Paper.Database)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.DL" /> @Html.DisplayNameFor(model => model.Paper.DL)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.DSS" /> @Html.DisplayNameFor(model => model.Paper.DSS)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.ESI" /> @Html.DisplayNameFor(model => model.Paper.ESI)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.FYC" /> @Html.DisplayNameFor(model => model.Paper.FYC)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.GI" /> @Html.DisplayNameFor(model => model.Paper.GI)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.GW" /> @Html.DisplayNameFor(model => model.Paper.GW)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.GIP" /> @Html.DisplayNameFor(model => model.Paper.GIP)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.HCI" /> @Html.DisplayNameFor(model => model.Paper.HCI)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.LE" /> @Html.DisplayNameFor(model => model.Paper.LE)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.Literacy" /> @Html.DisplayNameFor(model => model.Paper.Literacy)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.MIC" /> @Html.DisplayNameFor(model => model.Paper.MIC)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.Multimedia" /> @Html.DisplayNameFor(model => model.Paper.Multimedia)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.NDC" /> @Html.DisplayNameFor(model => model.Paper.NDC)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.NMC" /> @Html.DisplayNameFor(model => model.Paper.NMC)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.OOI" /> @Html.DisplayNameFor(model => model.Paper.OOI)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.OS" /> @Html.DisplayNameFor(model => model.Paper.OS)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.PP" /> @Html.DisplayNameFor(model => model.Paper.PP)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.Pedagogy" /> @Html.DisplayNameFor(model => model.Paper.Pedagogy)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.PL" /> @Html.DisplayNameFor(model => model.Paper.PL)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.Research" /> @Html.DisplayNameFor(model => model.Paper.Research)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.Security" /> @Html.DisplayNameFor(model => model.Paper.Security)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.SE" /> @Html.DisplayNameFor(model => model.Paper.SE)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.SAAD" /> @Html.DisplayNameFor(model => model.Paper.SAAD)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.UTITC" /> @Html.DisplayNameFor(model => model.Paper.UTITC)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.WAIP" /> @Html.DisplayNameFor(model => model.Paper.WAIP)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Paper.Other" /> @Html.DisplayNameFor(model => model.Paper.Other)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Paper.OD" class="control-label"></label>
+                <input asp-for="Paper.OD" class="form-control" />
+                <span asp-validation-for="Paper.OD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

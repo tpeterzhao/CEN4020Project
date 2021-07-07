@@ -1,0 +1,307 @@
+﻿@page
+@model CENProject.Pages.Reviewers.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Reviewer</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.FirstName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.FirstName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.MiddleInitial)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.MiddleInitial)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.LastName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.LastName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.Affiliation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.Affiliation)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.Department)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.Department)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.Address)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.Address)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.City)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.City)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.State)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.State)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.ZipCode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.ZipCode)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.PhoneNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.PhoneNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.EmailAddress)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.EmailAddress)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.Password)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.Password)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.AoA)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.AoA)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.Applications)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.Applications)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.Architecture)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.Architecture)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.AI)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.AI)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.CE)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.CE)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.Curriculum)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.Curriculum)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.DS)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.DS)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.Database)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.Database)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.DL)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.DL)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.DSS)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.DSS)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.ESI)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.ESI)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.FYC)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.FYC)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.GI)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.GI)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.GW)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.GW)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.GIP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.GIP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.HCI)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.HCI)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.LE)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.LE)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.Literacy)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.Literacy)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.MIC)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.MIC)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.Multimedia)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.Multimedia)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.NDC)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.NDC)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.NMC)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.NMC)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.OOI)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.OOI)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.OS)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.OS)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.PP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.PP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.Pedagogy)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.Pedagogy)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.PL)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.PL)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.Research)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.Research)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.Security)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.Security)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.SE)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.SE)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.SAAD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.SAAD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.UTITC)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.UTITC)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.WAIP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.WAIP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.Other)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.Other)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.OD)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.OD)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reviewer.RA)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Reviewer.RA)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Reviewer.ReviewerID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

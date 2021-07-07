@@ -1,0 +1,282 @@
+﻿@page
+@model CENProject.Pages.Papers.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].AuthorID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].Active)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].FilenameOriginal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].Filename)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].Certification)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].NotesToReviewers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].AoA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].Applications)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].Architecture)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].AI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].CE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].Curriculum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].DS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].Database)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].DL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].DSS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].ESI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].FYC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].GI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].GW)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].GIP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].HCI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].LE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].Literacy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].MIC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].Multimedia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].NDC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].NMC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].OOI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].OS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].PP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].Pedagogy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].PL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].Research)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].Security)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].SE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].SAAD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].UTITC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].WAIP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].Other)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paper[0].OD)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Paper) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AuthorID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Active)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FilenameOriginal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Filename)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Certification)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NotesToReviewers)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AoA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Applications)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Architecture)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Curriculum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Database)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DSS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ESI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FYC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GW)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GIP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HCI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Literacy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MIC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Multimedia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NDC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NMC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OOI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pedagogy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Research)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Security)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SAAD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UTITC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WAIP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Other)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OD)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.PaperID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.PaperID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.PaperID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
