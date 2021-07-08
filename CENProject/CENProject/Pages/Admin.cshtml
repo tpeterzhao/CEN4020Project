@@ -1,0 +1,22 @@
+﻿@page
+@model CENProject.Pages.AdminModel
+
+@{
+    ViewData["Title"] = "Admin";
+}
+
+@*Shows Admin home page after admin logs in
+    "Papers"
+    "Reviews"
+    "Reviewers"
+    "Authors*
+    Each tab goes to index.cshtml in the corresponding folder*@
+
+<div class="navbar">
+    <button type="button" class="header-button" onclick="location.href='/Admin'">Home</button>
+    <button type="button" class="header-button" onclick="location.href='/Papers/Index'">Papers</button>
+    <button type="button" class="header-button" onclick="location.href='/Authors/Index'">Authors</button>
+    <button type="button" class="header-button" onclick="location.href='/Reviews/Index'">Reviews</button>
+    <button type="button" class="header-button" onclick="location.href='/Reviewers/Index'">Reviewers</button>
+</div>
+

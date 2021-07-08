@@ -1,10 +1,14 @@
 ﻿@page
 @model IndexModel
-@{
-    ViewData["Title"] = "Home page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@{ ViewData["Title"] = "Home page"; }
+<div class="all">
+    <div class="content">
+        <h2>Log in</h2>
+        <input type="text" class="content-item" placeholder="Username">
+        <input type="password" class="content-item" placeholder="Password">
+        <button type="button" class="content-item" name="button" onclick="location.href = '/Authors/Create'">Sign up for author</button>
+        <button type="button" class="content-item" name="button" onclick="location.href = '/Reviewers/Create'">Sign up for reviewer</button>
+        <button type="button" class="content-item" name="button">Login</button>
+        <a href="/RetrievePassword" class="content-item">Forgot your password?</a>
+    </div>
 </div>

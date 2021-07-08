@@ -1,0 +1,16 @@
+﻿@page
+@model CENProject.Pages.Authors.HomeModel
+@{
+}
+
+@*Two navbar tabs, "My Papers" and "My Account"
+"My Papers" tab shows a list of all papers author has submitted(AuthorID == currentAuthorID in Database)
+"My Account" tab shows Details.cshtml page in Authors table
+Logout link at end of navbar*@
+
+    <div class="navbar">
+        <button type="button" class="header-button">Home</button>
+        <button type="button" class="header-button">New Paper</button>
+        <button type="button" class="header-button">My Paper</button>
+        <button type="button" class="header-button">My Account</button>
+    </div>
